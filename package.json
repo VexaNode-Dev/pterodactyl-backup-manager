@@ -1,0 +1,29 @@
+{
+  "name": "pterodactyl-backup-manager",
+  "version": "1.0.0",
+  "description": "Automated backup creation, download, retention rotation, and Discord webhook notifications for Pterodactyl Panel servers.",
+  "main": "src/manager.js",
+  "type": "module",
+  "bin": {
+    "ptero-backup": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "pterodactyl",
+    "pterodactyl-panel",
+    "backup",
+    "automation",
+    "discord-webhook"
+  ],
+  "author": "VexaNode",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
